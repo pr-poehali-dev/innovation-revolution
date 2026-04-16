@@ -13,11 +13,25 @@ const nav = [
 export default function Header() {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
+  const isHome = pathname === '/';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <header
+      className={cn(
+        'fixed top-0 left-0 right-0 z-50 transition-colors duration-300',
+        isHome
+          ? 'bg-transparent'
+          : 'bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm'
+      )}
+    >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="text-lg font-semibold text-gray-900">
+        <Link
+          to="/"
+          className={cn(
+            'text-lg font-semibold transition-colors',
+            isHome ? 'text-white/90 hover:text-white' : 'text-gray-900'
+          )}
+        >
           Бухгалтер — ваш счёт в порядке
         </Link>
 
@@ -28,7 +42,11 @@ export default function Header() {
               to={item.path}
               className={cn(
                 'text-sm transition-colors',
-                pathname === item.path
+                isHome
+                  ? pathname === item.path
+                    ? 'text-white font-medium'
+                    : 'text-white/70 hover:text-white'
+                  : pathname === item.path
                   ? 'text-gray-900 font-medium'
                   : 'text-gray-500 hover:text-gray-900'
               )}
@@ -39,7 +57,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden text-gray-600"
+          className={cn('md:hidden transition-colors', isHome ? 'text-white/80' : 'text-gray-600')}
           onClick={() => setOpen(!open)}
           aria-label="Меню"
         >
@@ -48,7 +66,12 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+        <div
+          className={cn(
+            'md:hidden px-6 py-4 flex flex-col gap-4',
+            isHome ? 'bg-black/60 backdrop-blur-sm' : 'bg-white border-t border-gray-100'
+          )}
+        >
           {nav.map((item) => (
             <Link
               key={item.path}
@@ -56,9 +79,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className={cn(
                 'text-sm py-1',
-                pathname === item.path
-                  ? 'text-gray-900 font-medium'
-                  : 'text-gray-500'
+                isHome ? 'text-white/90' : pathname === item.path ? 'text-gray-900 font-medium' : 'text-gray-500'
               )}
             >
               {item.label}
