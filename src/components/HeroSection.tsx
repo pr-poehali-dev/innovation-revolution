@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-1.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80',
+  'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1920&q=80',
+  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80',
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80',
 ];
 
 export default function HeroSection() {
@@ -55,8 +55,8 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
+                  src="https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/5626f0f3-8bee-423f-a983-81c78510865e.jpg"
+                  alt="Главный бухгалтер"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -70,10 +70,14 @@ export default function HeroSection() {
             >
               <div className="space-y-4">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  Ваш Главный Бухгалтер
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                  Бухгалтерский учёт · Налоги · Отчётность
+                </p>
+                <p className="max-w-md text-base text-white/60 leading-relaxed">
+                  Более 10 лет опыта. Беру на себя всю финансовую документацию,
+                  чтобы вы занимались бизнесом, а не бумагами.
                 </p>
                 <div className="flex gap-6 pt-4">
                   <a
