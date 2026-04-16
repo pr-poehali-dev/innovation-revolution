@@ -55,7 +55,7 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/771bd8ed-07c2-422e-ab78-821cdf3284ba.jpg"
+                  src="https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/bucket/ad4d22b5-5562-4fb3-88bd-056a445d839a.jpg"
                   alt="Главный бухгалтер"
                   className="h-full w-full object-cover"
                 />
