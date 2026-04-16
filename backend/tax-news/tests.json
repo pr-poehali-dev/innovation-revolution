@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Получение новостей ФНС",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"news": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
