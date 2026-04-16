@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80',
-  'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1920&q=80',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80',
-  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/f34413c4-601a-4e1d-9306-01299b6d44db.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/071b44de-bc7e-4ce1-b301-842c00ce3b81.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/4b7ab59e-8c0f-48d9-9627-733c8844debb.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/bf45bd76-1a91-4a00-8195-6f63e4ec9ca5.jpg',
 ];
 
 export default function HeroSection() {
@@ -55,7 +55,7 @@ export default function HeroSection() {
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
                 <img
-                  src="https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/5626f0f3-8bee-423f-a983-81c78510865e.jpg"
+                  src="https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/771bd8ed-07c2-422e-ab78-821cdf3284ba.jpg"
                   alt="Главный бухгалтер"
                   className="h-full w-full object-cover"
                 />
