@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/f34413c4-601a-4e1d-9306-01299b6d44db.jpg',
-  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/071b44de-bc7e-4ce1-b301-842c00ce3b81.jpg',
-  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/4b7ab59e-8c0f-48d9-9627-733c8844debb.jpg',
-  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/bf45bd76-1a91-4a00-8195-6f63e4ec9ca5.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/d9ecfffd-c7ba-45d1-ba33-38006d1d5d98.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/ab8e289b-b965-44ea-bebe-b289ac31cb54.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/445c4800-6243-4dc3-874c-dd1a84a13142.jpg',
+  'https://cdn.poehali.dev/projects/2ad0905d-ded1-46df-bd0d-58304ba6c2fe/files/c8cad508-c8f0-465f-9ed5-e6875e144414.jpg',
 ];
 
 export default function HeroSection() {
